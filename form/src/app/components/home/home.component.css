@@ -1,0 +1,8 @@
+.para{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px ;
+    font-family: "Roboto",sans-serif;
+    font-size: 100%;
+}
