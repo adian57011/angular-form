@@ -1,1 +1,26 @@
-<p>form works!</p>
+<h1>Forms</h1>
+
+<div class="container">
+    <form #useForm = "ngForm" (ngSubmit)="onSubmit()" >
+        <div class="form-group">
+            <label for="name">Name: </label><br>
+            <input type="text" name = "name" [(ngModel)] = "userModel.name">
+        </div>
+        <div class="form-group">
+            <label for="age">Age: </label><br>
+            <input type="text" name = "age" [(ngModel)] = "userModel.age">
+        </div>
+        <div class="form-group">
+            <label for="email">Email: </label><br>
+            <input type="text" name = "email" [(ngModel)] = "userModel.email">
+        </div>
+        <div class="form-group">
+            <label for="phone">Phone Number: </label><br>
+            <input type="text" name = "phone" [(ngModel)] = "userModel.phone">
+        </div>
+        <div class = "form-group">
+            <input type="submit">
+        </div>
+
+    </form>
+</div>
